@@ -1,4 +1,4 @@
-public class calculadora {
+public class Calculadora {
   //Função para trocar "(a + b)" por "somar"
   public static int somar(int a, int b){
     //int r = a + b;

@@ -10,14 +10,28 @@
  * 5. Arrays.
  * 
  ***********************************************************************************/
+
 public class ExemploFuncao {
+
+  public static void main(String[] args){
+    
+    //uso de uma biblioteca de funções (static)
+    double a = 100;
+    double b = 50;
+    double r = Calculadora.somar(a, b);
+
+    //Exemplo de uso de objeto + método
+    Bike objBike = new Bike();
+    objBike.trocarDeMarcha(novaMarcha: 5);
+
+    System.out.println("Marcha: " + objBike.trocarDeMarcha);
 
   //Função pra subistituir "System.out.println" por "imprimir"
   public static void imprimir(String str){
     System.out.println(str);
   }
 
-  public static void main(String[] args) {
+  public static void oldMain(String[] args) {
 
     // 1. Tipos de variáveis var, int, short, long, float, double, bool e string;
     // 2. Operadores de atribuição, aritméticos, relacionais, lógicos e unários;
@@ -43,23 +57,23 @@ public class ExemploFuncao {
     System.out.printf("O valor mínimo de double é %f e o valor máximo é %f%n", Double.MIN_VALUE, Double.MAX_VALUE);
 
     //imprimir("A + B: " + (a + b));
-    //imprimir(" A + B" + calculadora.somar(a , b))
-    int soma = calculadora.somar(a, b);
+    //imprimir(" A + B" + Calculadora.somar(a , b))
+    int soma = Calculadora.somar(a, b);
     imprimir(" A + B" + soma);
 
     //imprimir("A - B: " + (a - b));
-    //imprimir("A - B: " + calculadora.subtrair(a , b));
-    int subtracao = calculadora.subtrair(a, b);
+    //imprimir("A - B: " + Calculadora.subtrair(a , b));
+    int subtracao = Calculadora.subtrair(a, b);
     imprimir ("A - B:" + subtracao);
 
     //imprimir("A * B: " + (a * b));
-    //imprimir("A - B: " + calculadora.multiplicar(a * b));
-    int multiplicacao = calculadora.multiplicar(a, b);
+    //imprimir("A - B: " + Calculadora.multiplicar(a * b));
+    int multiplicacao = Calculadora.multiplicar(a, b);
     imprimir ("A - B:" + multiplicacao);
 
     //imprimir("A / B: " + (a / b));
-    //imprimir("A / B: " + calculadora.dividir(a , b));
-    int divisao = calculadora.dividir(a, b);
+    //imprimir("A / B: " + Calculadora.dividir(a , b));
+    int divisao = Calculadora.dividir(a, b);
     imprimir ("A - B:" + divisao);
 
     imprimir("A % B: " + (a % b));
